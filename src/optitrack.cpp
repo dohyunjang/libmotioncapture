@@ -6,9 +6,10 @@ using boost::asio::ip::udp;
 
 namespace libmotioncapture {
 
-  constexpr const char* MULTICAST_ADDRESS = "239.255.42.99";
+//  constexpr const char* MULTICAST_ADDRESS = "239.255.42.99";
+  constexpr const char* MULTICAST_ADDRESS = "224.0.0.1";
   constexpr int PORT_COMMAND = 1510;
-  constexpr int PORT_DATA = 1511;
+  constexpr int PORT_DATA = 9000;
   constexpr int MAX_PACKETSIZE = 100000;  // max size of packet (actual packet size is dynamic)
   constexpr int MAX_NAMELENGTH = 256;
 
